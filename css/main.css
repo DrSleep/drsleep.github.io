@@ -3,7 +3,6 @@ body {
     width: 70%;
 }
 nav ul, footer ul {
-    background-image: url("../assets/1469425389100.jpg");
     opacity: 0.8;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
