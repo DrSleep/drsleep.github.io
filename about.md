@@ -12,7 +12,7 @@ I enjoy reading books to keep myself grounded and keep looking for inspiration
 
 ### More Information
 
-You can find my CV [here](linktocv)
+You can find my CV [here](https://raw.githubusercontent.com/DrSleep/drsleep.github.io/master/files/cv_aug18.pdf)
 
 ### Contact me
 
