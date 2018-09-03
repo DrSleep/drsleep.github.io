@@ -1,7 +1,6 @@
 ---
 layout: post
 title: On the perils of being slow in semantic segmentation
-crosspost_to_medium: true
 ---
 
 
