@@ -16,14 +16,14 @@ permalink: /projects/
 <tbody>
 
 <tr>
-<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img width="90%" height="auto" src="{{ site.baseurl }}/images/rf_lw.png"></td>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img width="90%" height="auto" src="{{ site.baseurl }}/images/arch0.png"></td>
 <td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
-    **Light-Weight RefineNet for Real-Time Semantic Segmentation**<br>
-    *V.Nekrasov*, C.Shen, I.Reid<br>
-    British Machine Vision Conference, 2018<br>
-    [code](https://github.com/DrSleep/light-weight-refinenet) / [paper](https://arxiv.org/abs/1810.03272)<br>
+    **Fast Neural Architecture Search of Compact Semantic Segmentation Models via Auxiliary Cells**<br>
+    *V.Nekrasov*, H. Chen (equal contribution), C.Shen, I.Reid<br>
+    To appear in Conference on Computer Vision and Pattern Recognition (CVPR), 2019<br>
+    [paper](https://arxiv.org/abs/1810.10804)<br>
     <details>
-    <span style="font-size: 14px">Re-thinking an encoder-decoder based segmentation network into the one able to attain high performance with the real-time inference</span>
+    <span style="font-size: 14px">Fast reinforcement learning (RL)-based approach (in 8 GPU-days) of finding light-weight models for dense per-pixel tasks</span>
     </details>
     </td>
 </tr>
@@ -33,9 +33,23 @@ permalink: /projects/
 <td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
     **Real-Time Joint Semantic Segmentation and Depth Estimation Using Asymmetric Annotations**<br>
     *V.Nekrasov*, T.Dharmasiri, A.Spek, T.Drummond, C.Shen, I.Reid<br>
-    [paper](https://arxiv.org/abs/1809.04766) <br>
+    To appear in International Conference on Robotics and Automation (ICRA), 2019<br>
+    [code](https://github.com/DrSleep/multi-task-refinenet) / [paper](https://arxiv.org/abs/1809.04766)<br>
     <details>
     <span style="font-size: 14px">A simple approach of performing joint segmentation, depth and surface normals estimation in real-time with SOTA results using a single model</span>
+    </details>
+    </td>
+</tr>
+
+<tr>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img width="90%" height="auto" src="{{ site.baseurl }}/images/rf_lw.png"></td>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
+    **Light-Weight RefineNet for Real-Time Semantic Segmentation**<br>
+    *V.Nekrasov*, C.Shen, I.Reid<br>
+    British Machine Vision Conference (BMVC), 2018<br>
+    [code](https://github.com/DrSleep/light-weight-refinenet) / [paper](https://arxiv.org/abs/1810.03272)<br>
+    <details>
+    <span style="font-size: 14px">Re-thinking an encoder-decoder based segmentation network into the one able to attain high performance with the real-time inference</span>
     </details>
     </td>
 </tr>
@@ -57,7 +71,7 @@ permalink: /projects/
 <td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
     **Global Deconvolutional Networks for Semantic Segmentation**<br>
     *V.Nekrasov*, J.Ju, J.Choi<br>
-    British Machine Vision Conference, 2016<br>
+    British Machine Vision Conference (BMVC), 2016<br>
     [code](https://github.com/DrSleep/GDN) / [paper](https://arxiv.org/abs/1602.03930)<br>
     <details>
     <span style="font-size: 14px">Learnable matrix-based method for global interpolation inside segmentation networks</span>
