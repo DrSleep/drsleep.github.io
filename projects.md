@@ -83,6 +83,32 @@ permalink: /projects/
 </table>
 
 
+## Packages
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+</thead>
+<tbody>
+
+<tr>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img width="90%" height="auto" src="{{ site.baseurl }}/images/densetorch.png"></td>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
+    **DenseTorch**<br>
+    PyTorch<br>
+    [code](https://github.com/DrSleep/DenseTorch) / [docs](https://drsleep.github.io/DenseTorch)<br>
+    <details>
+    <span style="font-size: 14px">PyTorch Wrapper for Smooth Workflow with Dense Per-Pixel Tasks (including multi-task learning)</span>
+    </details>
+    </td>
+</tr>
+
+</tbody>
+</table>
+
 ## Re-implementations
 
 <table>
