@@ -1,0 +1,76 @@
+<head>
+  <title>Multi-Task RefineNet for Segmentation and Depth Estimation</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/tfjs-examples.css" />
+  <script src="/assets/js/tf.min.js"></script>
+  <script type="text/javascript" src="/assets/js/js-colormaps.js"></script>
+</head>
+
+<style>
+  .pred-container {
+    margin-bottom: 20px;
+  }
+
+  .pred-container > div {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+  }
+
+  .row {
+    display: table-row;
+  }
+  .cell {
+    display: table-cell;
+    padding-right: 20px;
+  }
+
+  #file-container {
+    margin-bottom: 20px;
+  }
+</style>
+
+<body>
+  <div class="tfjs-example-container">
+    <section class='title-area'>
+      <h1>TensorFlow.js: Using a pretrained Multi-Task RefineNet (NYUDv2)</h1>
+    </section>
+
+    <section>
+      <p class='section-head'>Description</p>
+      <p>
+        This demo uses the pretrained Multi-Task RefineNet model from PyTorch which you can find
+        <a href="https://github.com/DrSleep/multi-task-refinenet">here</a>.
+
+        It is trained to segment and predict depth for indoor scenes.
+      </p>
+      <p> The demo uses the <it>WebGL</it> backend for inference. 
+        If nothing happens after uploading an image, it means that your browser is not supported.
+        Please see console message for more information.
+      </p>
+    </section>
+
+    <section>
+        <p class='section-head'>Segmentation Colour Maps</p>
+        <p><img src="/assets/images/nyudcmap0.png"/></p>
+        <div><img src="/assets/images/nyudcmap1.png"/></div>
+      </section>
+
+    <section>
+      <p class='section-head'>Input / Model Outputs</p>
+
+      <div id="file-container">
+        Upload an image: <input type="file" id="files" name="files"/>
+      </div>
+      
+      <div id="predictions"></div>
+
+      <img id="inpimg"/>
+      <canvas id="segm"></canvas>
+      <canvas id="depth"></canvas>
+    </section>
+
+    <script src="/assets/js/index.js"></script>
+  </div>
+</body>
