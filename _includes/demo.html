@@ -1,5 +1,5 @@
 <head>
-  <title>Multi-Task RefineNet for Segmentation and Depth Estimation</title>
+  <title>Light-Weight RefineNet in TensorFlow.js</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/assets/css/tfjs-examples.css" />
@@ -29,48 +29,120 @@
   #file-container {
     margin-bottom: 20px;
   }
+
+  .collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #555;
+  }
+
+  .content {
+    padding: 0px 18px;
+    max-height: 0;
+    overflow: auto;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }
+
+  .canvas {
+    position: relative;
+    border:1px;
+  }
+
 </style>
 
 <body>
   <div class="tfjs-example-container">
     <section class='title-area'>
-      <h1>TensorFlow.js: Using a pretrained Multi-Task RefineNet (NYUDv2)</h1>
+      <h1>Light-Weight RefineNet in TensorFlow.js</h1>
     </section>
 
     <section>
       <p class='section-head'>Description</p>
       <p>
-        This demo uses the pretrained Multi-Task RefineNet model from PyTorch which you can find
-        <a href="https://github.com/DrSleep/multi-task-refinenet">here</a>.
+        This demo uses the pretrained <a href="https://github.com/DrSleep/light-weight-refinenet">Light-Weight
+            RefineNet</a> and <a href="https://github.com/DrSleep/multi-task-refinenet">Multi-Task RefineNet</a> models
+        converted from PyTorch.
 
-        It is trained to segment and predict depth for indoor scenes.
+        The first model is trained on PASCAL VOC to segment 20 classes and background, the second model is trained on
+        NYUD-v2 and is able to segment 40 classes and predict depth in the range of 8 meters.
       </p>
       <p> The demo uses the <it>WebGL</it> backend for inference. 
-        If nothing happens after uploading an image, it means that your browser is not supported.
+        If nothing happens after uploading an image or the output does not look reasonable at all, it means that your
+        device is not yet supported.
         Please see console message for more information.
       </p>
     </section>
-
-    <section>
-        <p class='section-head'>Segmentation Colour Maps</p>
-        <p><img src="/assets/images/nyudcmap0.png"/></p>
-        <div><img src="/assets/images/nyudcmap1.png"/></div>
-      </section>
+    <button class="collapsible">Segmentation (PASCAL VOC)</button>
+    <div class="content">
 
     <section>
       <p class='section-head'>Input / Model Outputs</p>
 
       <div id="file-container">
-        Upload an image: <input type="file" id="files" name="files"/>
+        Upload an image: <input type="file" id="files0" name="files0"/>
       </div>
       
-      <div id="predictions"></div>
+      <div id="predictions0"></div>
 
-      <img id="inpimg"/>
-      <canvas id="segm"></canvas>
-      <canvas id="depth"></canvas>
+      <img id="inpimg0"/>
+      <canvas id="segm0" class="canvas"></canvas>
+    </section>
+    <section>
+      <p class='section-head'>Segmentation Colour Map</p>
+      <p><img src="/assets/images/voccmap.png"/></p>
     </section>
 
+    </div>
+
+    <button class="collapsible">Segmentation + Depth (NYUD-v2)</button>
+    <div class="content">
+
+        <section>
+          <p class='section-head'>Input / Model Outputs</p>
+
+          <div id="file-container">
+            Upload an image: <input type="file" id="files" name="files"/>
+          </div>
+
+          <img id="inpimg"/>
+            <canvas id="segm" class="canvas"></canvas>
+            <canvas id="depth" class="canvas"></canvas>
+        </section>
+        <section>
+          <p class='section-head'>Segmentation Colour Maps</p>
+          <p><img src="/assets/images/nyudcmap0.png"/></p>
+          <p><img src="/assets/images/nyudcmap1.png"/></p>
+        </section>
+    </div>
+
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+          content.style.maxHeight = null;
+          } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
     <script src="/assets/js/index.js"></script>
   </div>
 </body>
