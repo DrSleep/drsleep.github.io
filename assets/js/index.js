@@ -139,36 +139,6 @@ filesElement0.addEventListener('change', evt => {
 });
 
 
-
-const mtrflwDemo = async (imElement) => {
-    // const imElement = document.getElementById('inpimg');
-    const offset = 1; // label mask offset
-    const img = tf.browser.fromPixels(imElement).toFloat();
-    const scale = tf.scalar(255.);
-    const mean = tf.tensor3d([0.485, 0.456, 0.406], [1,1,3]);
-    const std = tf.tensor3d([0.229, 0.224, 0.225], [1,1,3]);
-    const normalised = img.div(scale).sub(mean).div(std);
-    const model = await tf.loadLayersModel('/assets/misc/tfjs_target_dir/model.json');
-    const batched = normalised.transpose([2,0,1]).expandDims();
-    const predictions = model.predict(batched);
-
-    const initShape = batched.shape.slice(2,4);
-    const segmPred = tf.image.resizeBilinear(predictions[0].transpose([0,2,3,1]), initShape);
-    const segmMask = segmPred.argMax(3).reshape(initShape);
-    const depthPred = tf.image.resizeBilinear(predictions[1].squeeze(0).transpose([1,2,0]), initShape);
-    const depthMask = depthPred.clipByValue(MIN_DEPTH, MAX_DEPTH).sub(MIN_DEPTH).div(MAX_DEPTH-MIN_DEPTH).reshape(initShape);
-
-    const segmOut = await toCMAP(segmMask, pascalvoc, offset);
-    const depthOut = await toCMAPDepth(depthMask);
-    
-    const segmCanvas = document.getElementById('segm');
-    const depthCanvas = document.getElementById('depth');
-
-    await tf.browser.toPixels(tf.browser.fromPixels(segmOut), segmCanvas);
-    await tf.browser.toPixels(tf.browser.fromPixels(depthOut), depthCanvas);
-
-  };
-
 const rflwDemo = async (imElement) => {
     // const imElement = document.getElementById('inpimg');
     const offset = 0; // label mask offset
@@ -193,7 +163,7 @@ const rflwDemo = async (imElement) => {
   };
 
 
-  const mtrflwDemo3 = async (imElement) => {
+  const mtrflwDemo = async (imElement) => {
       // triplet: depth, normals, segmentation
     // const imElement = document.getElementById('inpimg');
     const offset = 1; // label mask offset
