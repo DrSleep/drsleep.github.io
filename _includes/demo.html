@@ -75,7 +75,7 @@
         converted from PyTorch.
 
         The first model is trained on PASCAL VOC to segment 20 classes and background, the second model is trained on
-        NYUD-v2 and is able to segment 40 classes and predict depth in the range of 8 meters.
+        NYUD-v2 and is able to segment 40 classes, predict depth in the range of 8 meters and estimate surface normals.
       </p>
       <p> The demo uses the <it>WebGL</it> backend for inference. 
         If nothing happens after uploading an image or the output does not look reasonable at all, it means that your
@@ -105,7 +105,7 @@
 
     </div>
 
-    <button class="collapsible">Segmentation + Depth (NYUD-v2)</button>
+    <button class="collapsible">Segmentation + Depth + Surface Normals (NYUD-v2)</button>
     <div class="content">
 
         <section>
@@ -118,6 +118,7 @@
           <img id="inpimg"/>
             <canvas id="segm" class="canvas"></canvas>
             <canvas id="depth" class="canvas"></canvas>
+            <canvas id="norm" class="canvas"></canvas>
         </section>
         <section>
           <p class='section-head'>Segmentation Colour Maps</p>

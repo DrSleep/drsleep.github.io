@@ -104,7 +104,7 @@ filesElement.addEventListener('change', evt => {
       img.src = e.target.result;
       img.height = IMAGE_SIZE;
       img.width = IMAGE_SIZE;
-      img.onload = () => mtrflwDemo(img);
+      img.onload = () => mtrflwDemo3(img);
     };
 
     // Read in the image file as a data URL.
@@ -190,4 +190,41 @@ const rflwDemo = async (imElement) => {
     const segmCanvas = document.getElementById('segm0');
 
     await tf.browser.toPixels(tf.browser.fromPixels(segmOut), segmCanvas);
+  };
+
+
+  const mtrflwDemo3 = async (imElement) => {
+      // triplet: depth, normals, segmentation
+    // const imElement = document.getElementById('inpimg');
+    const offset = 1; // label mask offset
+    const img = tf.browser.fromPixels(imElement).toFloat();
+    const scale = tf.scalar(255.);
+    const mean = tf.tensor3d([0.485, 0.456, 0.406], [1,1,3]);
+    const std = tf.tensor3d([0.229, 0.224, 0.225], [1,1,3]);
+    const normscale = tf.tensor3d([1., 1., -1.], [1,1,3]);
+    const normsub = tf.tensor3d([-1., -1., 1], [1,1,3]);
+    const normalised = img.div(scale).sub(mean).div(std);
+    const model = await tf.loadLayersModel('/assets/misc/tfjs_triplet/model.json');
+    const batched = normalised.transpose([2,0,1]).expandDims();
+    const predictions = model.predict(batched);
+
+    const initShape = batched.shape.slice(2,4);
+    const segmPred = tf.image.resizeBilinear(predictions[2].transpose([0,2,3,1]), initShape);
+    const segmMask = segmPred.argMax(3).reshape(initShape);
+    const normPred = tf.image.resizeBilinear(predictions[1].transpose([0,2,3,1]), initShape);
+    const normMask = normPred.div(tf.norm(normPred, 2, 3, true)).squeeze().sub(normsub).div(normscale).div(2.);
+    const depthPred = tf.image.resizeBilinear(predictions[0].squeeze(0).transpose([1,2,0]), initShape);
+    const depthMask = depthPred.clipByValue(MIN_DEPTH, MAX_DEPTH).sub(MIN_DEPTH).div(MAX_DEPTH-MIN_DEPTH).reshape(initShape);
+
+    const segmOut = await toCMAP(segmMask, pascalvoc, offset);
+    const depthOut = await toCMAPDepth(depthMask);
+    
+    const segmCanvas = document.getElementById('segm');
+    const depthCanvas = document.getElementById('depth');
+    const normCanvas = document.getElementById('norm');
+
+    await tf.browser.toPixels(tf.browser.fromPixels(segmOut), segmCanvas);
+    await tf.browser.toPixels(tf.browser.fromPixels(depthOut), depthCanvas);
+    await tf.browser.toPixels(normMask, normCanvas);
+
   };
