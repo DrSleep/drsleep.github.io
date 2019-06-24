@@ -104,7 +104,7 @@ filesElement.addEventListener('change', evt => {
       img.src = e.target.result;
       img.height = IMAGE_SIZE;
       img.width = IMAGE_SIZE;
-      img.onload = () => mtrflwDemo3(img);
+      img.onload = () => mtrflwDemo(img);
     };
 
     // Read in the image file as a data URL.
