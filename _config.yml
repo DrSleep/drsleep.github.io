@@ -60,7 +60,7 @@ plugins:
 
 author:
   name   : "Vladimir Nekrasov"
-  avatar : https://raw.githubusercontent.com/DrSleep/drsleep.github.io/master/images/newava.jpg
+  avatar : "/images/newava.jpg"
   bio    : "I am a PhD researcher at the University of Adelaide. 
   My focus is on building practical deep learning solutions for dense per-pixel tasks such as semantic segmentation. 
   I am currently writing my thesis and playing lots of chess games."
@@ -122,7 +122,7 @@ tag_archive:
 
 
 analytics:
-  provider: "google-gtag"
+  provider: "google"
   google:
     tracking_id: "UA-124814052-1"
     anonymize_ip: false # default
