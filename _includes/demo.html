@@ -2,7 +2,6 @@
   <title>Light-Weight RefineNet in TensorFlow.js</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/assets/css/tfjs-examples.css" />
   <script src="/assets/js/tf.min.js"></script>
   <script type="text/javascript" src="/assets/js/js-colormaps.js"></script>
 </head>
@@ -30,11 +29,6 @@
     margin-bottom: 20px;
   }
 
-  /* #inpimg0, #inpimg1 {
-    height: 224px;
-    width: 224px;
-  } */
-
   #inpimg0, #inpimg {
     vertical-align: top;
     height: 224px;
@@ -42,19 +36,14 @@
   }
 
   .collapsible {
-    background-color: #777;
-    color: white;
+    background-color: rgba(239, 108, 1, 0.555);
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
-  }
-
-  .active, .collapsible:hover {
-    background-color: #555;
+    font-size: 18px;
   }
 
   .content {
@@ -69,6 +58,35 @@
     position: relative;
     border:1px;
   }
+
+  p.section-head {
+    font-variant: small-caps;
+    text-transform: uppercase;
+    letter-spacing: 0.17em;
+    line-height: 1.2em;
+    font-weight: 500;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-left: 1px solid #EF6C00;
+    padding-left: 24px;
+    margin-left: -24px;
+    color: #818181; }
+
+  .tfjs-example-container {
+    font-family: Roboto, sans-serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased; 
+  }
+
+  button {
+    padding: 8px 12px 8px 12px;
+    font-size: 100%; }
+
+  button:hover {
+  background-color:  #EF6C00;}
+
+  button:active {
+  background-color: #EF6C00;}
 
 </style>
 
