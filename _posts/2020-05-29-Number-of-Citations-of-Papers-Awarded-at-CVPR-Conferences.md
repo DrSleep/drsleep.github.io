@@ -3,6 +3,8 @@ title: "Number of Citations of Papers Awarded at CVPR conferences"
 date: 2020-05-29
 categories:
   - solyanka
+tags:
+  - exploratory
 layout: splash
 ---
 
