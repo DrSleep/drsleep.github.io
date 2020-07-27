@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Solyanka by DrSleep
+# logo: "/assets/images/solyanka-logo-large.png"
 email: nekrasow(at)gmail(dot)com
 description: >- # this means to ignore newlines until "baseurl:"
   My personal blog built on Jekyll
@@ -61,9 +62,9 @@ plugins:
 author:
   name   : "Vladimir Nekrasov"
   avatar : "/images/newava.jpg"
-  bio    : "I am a PhD researcher at the University of Adelaide. 
-  My focus is on building practical deep learning solutions for dense per-pixel tasks such as semantic segmentation. 
-  I am currently writing my thesis and playing lots of chess games."
+  bio    : "I am a machine learning and computer vision enthusiast and researcher.
+  My focus is on simplifying existing pipelines to create practical deep learning solutions for dense per-pixel tasks, primarily semantic segmentation.
+  I am currently playing lots of anti-chess games."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
