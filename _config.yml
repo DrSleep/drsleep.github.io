@@ -63,8 +63,7 @@ author:
   name   : "Vladimir Nekrasov"
   avatar : "/images/newava.jpg"
   bio    : "I am a machine learning and computer vision research engineer.
-  My focus is on simplifying existing pipelines to create practical deep learning solutions for dense per-pixel tasks, primarily semantic segmentation.
-  I am a deep learning lead at Skydio and we are hiring!"
+  My focus is on simplifying existing pipelines to create practical deep learning solutions for dense per-pixel tasks, primarily semantic segmentation."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
