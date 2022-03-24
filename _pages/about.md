@@ -9,7 +9,7 @@ My primary experience is in applied deep learning and computer vision. I have wo
 
 Most recently, I was leading deep learning efforts and managing a small team at Skydio, where I mainly concentrated on building end-to-end reproducible deep learning pipelines.
 
-Prior to that, I did my PhD studies at the University of Adelaide. I was fortunate to work there under the supervision of [Prof. Ian Reid](https://cs.adelaide.edu.au/~ianr/) and co-supervision of [Prof. Chunhua Shen](https://cshen.github.io). During my doctorate studies I used deep learning to solve various dense per-pixel computer vision tasks (primarily, semantic segmentation) in real-time and with high performance. My doctorate thesis is available through [the University of Adelaide library service](https://digital.library.adelaide.edu.au/dspace/handle/2440/129333).
+Prior to that, I did my PhD studies at the University of Adelaide. I was fortunate to work there under the supervision of [Prof. Ian Reid](https://cs.adelaide.edu.au/~ianr/) and co-supervision of [Prof. Chunhua Shen](https://cshen.github.io). During my doctorate studies I used deep learning to solve various dense per-pixel computer vision tasks (primarily, semantic segmentation) in real-time and with high performance. My doctorate thesis is available through [the University of Adelaide library service](https://digital.library.adelaide.edu.au/dspace/handle/2440/129333). As a PhD student, I was the first author of 6 academic papers, 5 of which were published and presented at major computer vision and robotic conferences, including CVPR and ICRA.
 
 I believe in hard work and curious mind.
 
