@@ -2,9 +2,10 @@
 title: "Multi-Task RefineNet Demo in Your Browser"
 date: 2019-05-04
 categories:
-  - demo
+  - technical
 tags:
   - javascript
+  - demo
 ---
 
 I have just added a demo of Multi-Task RefineNet running in your browser with the help of [TensorFlow.js](https://www.tensorflow.org/js/). Check it out in [demos](https://drsleep.github.io/demos/)! For now, only browsers with WebGL are supported.

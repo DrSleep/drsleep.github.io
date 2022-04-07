@@ -2,11 +2,12 @@
 title: "On the perils of being slow in semantic segmentation"
 date: 2018-09-03
 categories:
-  - research
+  - technical
 tags:
   - real-time
   - semantic-segmentation
   - medium
+  - research
 ---
 
 

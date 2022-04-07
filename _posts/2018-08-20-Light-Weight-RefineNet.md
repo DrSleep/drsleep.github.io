@@ -2,11 +2,12 @@
 title: "Light-Weight RefineNet"
 date: 2018-08-20
 categories:
-  - research
+  - technical
 tags:
   - real-time
   - semantic-segmentation
   - pascal-voc
+  - research
 ---
 
 After nearly two years from my first publication (at the same venue as now), which included a year of academic break, I have finally submitted my first paper in my new PhD journey to the BMVC conference, which will take place from Sep, 3 to Sep, 6 in Newcastle-upon-Tyne. This time it took me a month more for the submission, although all the main results were in place already in March.  

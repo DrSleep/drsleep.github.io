@@ -2,11 +2,12 @@
 title: "Tutorial - Converting a PyTorch model to TensorFlow.js"
 date: 2019-05-11
 categories:
-  - tutorial
+  - technical
 tags:
   - pytorch
   - javascript
   - demo
+  - tutorial
 ---
 
 

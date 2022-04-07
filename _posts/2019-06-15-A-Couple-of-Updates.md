@@ -2,7 +2,7 @@
 title: "A Couple of Updates"
 date: 2019-06-15
 categories:
-  - blog
+  - personal
 tags:
   - updates
 ---

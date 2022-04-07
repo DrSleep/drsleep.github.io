@@ -2,10 +2,11 @@
 title: "Are we there yet? Part I. Education"
 date: 2019-09-29
 categories:
-  - blog
+  - technical
 tags:
   - are-we-there-yet
   - education
+  - review
 ---
 
 

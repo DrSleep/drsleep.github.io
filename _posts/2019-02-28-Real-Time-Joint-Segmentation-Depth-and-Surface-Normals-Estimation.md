@@ -2,13 +2,14 @@
 title: "Real-Time Joint Segmentation, Depth and Surface Normals Estimation"
 date: 2019-02-28
 categories:
-  - research
+  - technical
 tags:
   - real-time
   - multi-task-learning
   - semantic-segmentation
   - depth-estimation
   - surface-normals
+  - research
 ---
 
 Our paper, titled **“Real-Time Joint Semantic Segmentation and Depth Estimation Using Asymmetric Annotations”** has recently been accepted at [International Conference on Robotics and Automation (ICRA 2019)](https://www.icra2019.org/), which will take place in Montreal, Canada in May. This was a joint work between the University of Adelaide and Monash University, and it was a great experience for me learning from my collaborators about two dense per-pixel tasks that I had only been vaguely familiar with before: depth estimation – i.e., predicting how far each pixel is from the observer, and surface normals estimation – i.e., predicting a perpendicular vector (normal vector) to each pixel’s surface. Both tasks are extremely valuable in the robotic community, and hence we were motivated to explore the limits of performing three tasks (2 above + semantic segmentation) in real-time using a single network.
