@@ -8,6 +8,8 @@ tags:
   - coreml
   - macos
 layout: splash
+header:
+  teaser: images/coreml_header.gif
 ---
 
 ***I recently read the CVPR 2022 paper titled ["Learning to generate line drawings that convey geometry and semantics"](https://arxiv.org/abs/2203.12691), and I found the results quite interesting. Thankfully, the authors have also released their [source code](https://github.com/carolineec/informative-drawings), which gave me a chance to try out their models. Unfortunately, running their PyTorch models out of the box on my MacBook with M1 is quite slow. In this post, I will showcase how to convert PyTorch models to Core ML models optimised for inference with Apple's Neural Engine.***

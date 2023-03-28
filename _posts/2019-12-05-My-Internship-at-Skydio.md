@@ -6,6 +6,8 @@ categories:
 tags:
   - internship
   - skydio
+header:
+  teaser: images/skydio_internship_header.gif
 ---
 
 ***Recently I returned to Australia from the US where I had spent five months as an intern at [Skydio](https://www.skydio.com/), a Redwood City-based startup that is building autonomous flying robots, aka `drones`. In this post, I will share what I learned during my stay in the US.***

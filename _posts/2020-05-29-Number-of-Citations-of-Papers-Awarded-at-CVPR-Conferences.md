@@ -7,6 +7,8 @@ tags:
   - exploratory
   - cvpr
 layout: splash
+header:
+  teaser: images/citations_header.png
 ---
 
 ***CVPR has long been regarded as the cream of the crop in the area of computer vision, attracting high-quality and influential publications. Traditionally, several works have been selected for recognition with one of the prestigious awards at each CVPR conference. In this post, I am going to take a look at the number of citations that these CVPR awardees have accrued over time.***

@@ -7,6 +7,8 @@ tags:
   - stats
   - streamlit
   - football
+header:
+  teaser: images/stats_quiz_game_header.png
 ---
 
 ***About a month ago I watched a very awesome and inspirational talk by Patrick Lucey from StatsPerform [on an overview of AI in sport](https://www.youtube.com/watch?v=5itT4XmdRjU). In one of their slides they mention that "sports data reconstructs the story of the match/performance" and "the more granular the data, the better the story". The analogy stuck with me and made me wonder: could I predict the score of a football match if I had only a snapshot of its statistics?***
