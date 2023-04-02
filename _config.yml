@@ -78,7 +78,7 @@ author:
       icon: "fas fa-chess-king"
       url: "https://lichess.org/@/real_drsleep"
     - label: "Resume"
-      icon: "fas file-pdf"
+      icon: "fas fa-file-pdf"
       url: "https://raw.githubusercontent.com/DrSleep/drsleep.github.io/master/files/cv2.pdf"
 
 footer:
