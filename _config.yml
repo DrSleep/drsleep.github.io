@@ -63,7 +63,8 @@ author:
   name   : "Vladimir Nekrasov"
   avatar : "/images/newava.jpg"
   bio    : "I am a machine learning and computer vision research engineer.
-  My focus is on simplifying existing pipelines to create practical deep learning solutions for dense per-pixel tasks, primarily semantic segmentation.<br />"
+  My focus is on simplifying existing pipelines to create practical deep learning solutions for dense per-pixel tasks, primarily semantic segmentation.<br />
+  ***:wave: Currently I am on the lookout for new opportunities. I am interested in deep learning and computer vision positions in sports, robotics, AI safety or industries that prioritise societal and environmental impacts.***"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
