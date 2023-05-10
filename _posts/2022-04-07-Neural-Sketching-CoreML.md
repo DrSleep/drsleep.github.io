@@ -7,7 +7,6 @@ tags:
   - pytorch
   - coreml
   - macos
-layout: splash
 header:
   teaser: images/coreml_header.gif
 ---

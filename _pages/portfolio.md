@@ -1,6 +1,6 @@
 ---
-title: Projects
-permalink: /projects/
+title: Portfolio
+permalink: /portfolio/
 ---
 
 ## Research
@@ -107,8 +107,7 @@ permalink: /projects/
 </tbody>
 </table>
 
-
-## Packages
+## Re-implementations and extensions
 
 <table>
 <colgroup>
@@ -120,30 +119,28 @@ permalink: /projects/
 <tbody>
 
 <tr>
-<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img src="{{ site.baseurl }}/images/densetorch.png"></td>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img src="{{ site.baseurl }}/images/sketch.gif"></td>
 <td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
-    **DenseTorch**<br>
-    PyTorch<br>
-    [code](https://github.com/DrSleep/DenseTorch) / [docs](https://drsleep.github.io/DenseTorch)<br>
+    **Informative Drawings**<br>
+    PyTorch, CoreML<br>
+    [code](https://github.com/DrSleep/informative-drawings) / [blogpost](/technical/Neural-Sketching-CoreML/)<br>
     <details>
-    <span style="font-size: 14px">PyTorch Wrapper for Smooth Workflow with Dense Per-Pixel Tasks (including multi-task learning)</span>
+    <span style="font-size: 14px">Extending the authors' repository with the CoreML model during inference for the neural sketching task</span>
     </details>
     </td>
 </tr>
 
-</tbody>
-</table>
-
-## Re-implementations
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-</thead>
-<tbody>
+<tr>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img src="{{ site.baseurl }}/images/sam.png"></td>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
+    **Segment Anything Model (SAM)**<br>
+    PyTorch, MPS<br>
+    [code](https://github.com/drsleep/segment-anything/tree/mps-support) <br>
+    <details>
+    <span style="font-size: 14px">Extending the authors' repository with the support for MPS (Mac Metal PyTorch backend) during inference</span>
+    </details>
+    </td>
+</tr>
 
 <tr>
 <td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img src="{{ site.baseurl }}/images/tf-dl1.png"></td>
@@ -197,7 +194,7 @@ permalink: /projects/
 </tbody>
 </table>
 
-## Motley
+## Miscellaneous
 
 <table>
 <colgroup>
@@ -208,6 +205,38 @@ permalink: /projects/
 </thead>
 <tbody>
 
+<tr>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img src="{{ site.baseurl }}/images/stats_quiz_game_header.png"></td>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
+    **Football Stats Quiz Game**<br>
+    [app](https://football-quiz.streamlit.app/) / [code](https://github.com/DrSleep/football-stats-quiz) / [blogpost](/technical/Football-Stats-Quiz/)<br>
+    <details>
+    <span style="font-size: 14px">Simple game on football stats made in Streamlit</span>
+    </details>
+    </td>
+</tr>
+
+<tr>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img src="{{ site.baseurl }}/images/citations_header.png"></td>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
+    **Number of citations of CVPR awardees**<br>
+    [code](https://github.com/DrSleep/solyanka/tree/master/best_paper_awards) / [blogpost](/technical/Number-of-Citations-of-Papers-Awarded-at-CVPR-Conferences/)<br>
+    <details>
+    <span style="font-size: 14px">Looking at the number of citations the papers awarded at CVPR accrued over time</span>
+    </details>
+    </td>
+</tr>
+
+<tr>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img src="{{ site.baseurl }}/images/densetorch.png"></td>
+<td markdown="span" style="vertical-align: middle; padding-bottom: 3em;">
+    **DenseTorch**<br>
+    [code](https://github.com/DrSleep/DenseTorch) / [docs](https://drsleep.github.io/DenseTorch)<br>
+    <details>
+    <span style="font-size: 14px">PyTorch Wrapper for Smooth Workflow with Dense Per-Pixel Tasks (including multi-task learning)</span>
+    </details>
+    </td>
+</tr>
 
 <tr>
 <td markdown="span" style="vertical-align: middle; padding-bottom: 3em;"><img src="{{ site.baseurl }}/images/bme.png"></td>
@@ -241,7 +270,6 @@ permalink: /projects/
     </details>
     </td>
 </tr>
-
 
 </tbody>
 </table>
