@@ -4,17 +4,8 @@ title: "About Me"
 layout: splash
 ---
 
-### :wave: :wave: :wave:
-
-**I am currently on the lookout for full-time positions in either:**
-* **areas that prioritise societal and environmental impacts (e.g. related to climate change, renewable technology, medicine, AI safety), or**
-* **areas that I am passionate about (e.g. related to sports, robotics and virtual worlds).**
-
-**I am also open to work as a consultant or a contractor on a variety of topics related to my expertise, see this [page](/expertise) for more details.**
-
-***My CV is hosted [here](https://raw.githubusercontent.com/DrSleep/drsleep.github.io/master/files/cv2.pdf).***
-
----
+<br>
+*Hello! I am Vladimir and I occasionally write posts here on a variety of topics that I am interested in. Just like the solyanka soup, this blog contains a mixture of everything, hence its name.*
 
 ### About me
 
@@ -38,3 +29,11 @@ My other hobbies include reading books, watching movies and listening to music.
 ### Contact me
 
 [via email](mailto:nekrasowladimir(at)gmail(dot)com)
+
+### Hire me
+
+I am currently open to part-time positions in one of the following areas of my interest: sports, medicine & health, space, climate change, robotics, AI safety.
+
+I am also open to short-term positions as a consultant or a contractor on a variety of topics related to my expertise, see this [page](/expertise) for more details.
+
+My CV is hosted [here](https://raw.githubusercontent.com/DrSleep/drsleep.github.io/master/files/cv2.pdf).

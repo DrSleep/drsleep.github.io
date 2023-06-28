@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   My personal blog built on Jekyll
 url: https://drsleep.github.io
 baseurl: ""
-twitter_username: 
+twitter_username:
 github_username: drsleep
 minimal_mistakes_skin: dirt
 repository: "drsleep/drsleep.github.io"
@@ -62,8 +62,7 @@ plugins:
 author:
   name   : "Vladimir Nekrasov"
   avatar : "/images/newava.jpg"
-  bio    : "I am a deep learning and computer vision expert focused on simplifying existing end-to-end pipelines in order to create practical solutions and applications.<br />
-  ***:information_source: I am currently on the lookout for new opportunities. Read more [<u>here</u>](/about/#wave-wave-wave).***"
+  bio    : "***I am a deep learning and computer vision expert focused on building practical and reproducible end-to-end solutions for various real-world problems.***"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
