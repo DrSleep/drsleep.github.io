@@ -9,6 +9,8 @@ layout: splash
 
 ### About me
 
+I am currently working on **BYOSA** (build your own sports analytics) -- [https://byosa.github.io](https://byosa.github.io). It is an AI-powered tech start-up focused on levelling the analytical field in football such that a football club of any level would be able to collect, process and model their own data without reliance on third-party providers.
+
 My primary experience is in applied deep learning and computer vision. I have worked across the full stack of machine learning stages, including working with raw data and setting up (multi-node) infrastructure for training / validation / deployment. My programming language of choice is Python (although occasionally I also write in C++ and CUDA if needed) and my deep learning framework of choice is PyTorch (although I have worked with TensorFlow and [some of my past work is still quite popular](https://github.com/DrSleep/tensorflow-deeplab-resnet)). For deployment purposes, I have primarily worked with [TensorFlow.js](https://drsleep.github.io/tutorial/Tutorial-PyTorch-to-TensorFlow-JS/) and TensorRT.
 
 Previously I was a senior data scientist of the AI team at Nearmap, where I was building temporal deep learning solutions on aerial imagery.
